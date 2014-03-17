@@ -1,0 +1,35 @@
+/* 
+    Created on : 17-mrt-2014, 14:58:29
+    Author     : g.v.lankveld
+*/
+
+html {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 0.2em #000;
+    -moz-text-shadow: 0 0 0.2em #000;
+    -webkit-text-shadow: 0 0 0.2em #000;
+}
+
+.centre-container {
+    margin: auto;
+    width: 500px;
+}
+
+.example-box {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0.5em 0 #000;
+    -moz-box-shadow: 0 0 0.5em 0 #000;
+    -webkit-box-shadow: 0 0 0.5em 0 #000;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+
+.copyright {
+    font-size: 12px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example background cycle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/example.css">
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/background.cycle.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("body").backgroundCycle({
+                    imageUrls: [
+                        'res/img/bg1.jpg',
+                        'res/img/bg2.jpg',
+                        'res/img/bg3.jpg'
+                    ],
+                    fadeSpeed: 2000,
+                    duration: 5000,
+                    backgroundSize: SCALING_MODE_COVER
+                });
+            });
+        </script>
+    </head>
+    <body style="margin: 0;">
+        <div class='centre-container'>
+            <h1>Background Cycle example</h1>
+            <div id="testDiv" class='example-box'>
+                <p>
+                    This page is an example usage of background.cycle.js. It uses the following code:
+                </p>
+                <pre>
+                <code>
+        $("body").backgroundCycle({
+            imageUrls: [
+                'res/img/bg1.jpg',
+                'res/img/bg2.jpg',
+                'res/img/bg3.jpg'
+            ],
+            fadeSpeed: 2000,
+            duration: 5000,
+            backgroundSize: SCALING_MODE_CONTAIN
+        });
+                </code>
+                </pre>
+                <p class="copyright">
+                    Images by <a href="http://www.flickr.com/photos/joiseyshowaa/">joiseyshowaa</a>, <a href="http://www.flickr.com/photos/suckamc/">Martin Cathrae</a> and <a href="http://www.flickr.com/photos/34652102@N04/">Randy Pertiet</a> Licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
