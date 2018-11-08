@@ -138,11 +138,6 @@ function cycleToNextImage() {
         currentImageIndex = 0;
     }
 
-    var options = {
-        duration: fadeSpeed,
-        queue: false
-    };
-
-    $('#' + previousImageId).fadeOut(options);
-    $('#' + imageIds[currentImageIndex]).fadeIn(options);
+    $('#' + previousImageId).fadeTo(fadeSpeed, 0);
+    $('#' + imageIds[currentImageIndex]).fadeTo(fadeSpeed, 1);
 }
